@@ -8,161 +8,201 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
+        /* Arrière-plan clair, lumineux et premium avec image d'ingénierie en filigrane */
         .hero-bg {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8)), 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.85)), 
                         url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
-        </style>
+            background-attachment: fixed;
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-200 selection:text-blue-900">
 
     <div class="hero-bg min-h-screen flex flex-col justify-between p-6 md:p-12">
         
-        <header class="flex flex-col md:flex-row justify-between items-center border-b border-slate-700/50 pb-6 backdrop-blur-sm rounded-xl p-4 bg-slate-900/40">
+        <header class="flex flex-col md:flex-row justify-between items-center border-b border-white/60 pb-6 backdrop-blur-md rounded-2xl p-5 bg-white/70 shadow-sm">
             <div class="flex items-center space-x-4">
-                <div class="bg-gradient-to-tr from-blue-600 to-cyan-500 p-3 rounded-xl shadow-lg shadow-blue-500/30">
-                    <i class="fa-solid fa-compass-drafting text-2xl text-white"></i>
+                <div class="bg-gradient-to-tr from-blue-700 to-cyan-500 p-3 rounded-xl shadow-lg shadow-blue-500/20 text-white">
+                    <i class="fa-solid fa-compass-drafting text-2xl"></i>
                 </div>
                 <div>
-                    <h1 class="text-2xl font-black tracking-wider uppercase bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Ingénieur MasterHub</h1>
-                    <p class="text-xs text-slate-400 font-mono">Boîte à outils de l'Excellence Industrielle</p>
+                    <h1 class="text-2xl font-black tracking-wider uppercase bg-gradient-to-r from-blue-800 to-cyan-600 bg-clip-text text-transparent">Ingénieur MasterHub</h1>
+                    <p class="text-xs text-slate-500 font-mono font-semibold">Boîte à outils de l'Excellence Industrielle</p>
                 </div>
             </div>
             <div class="mt-4 md:mt-0">
-                <a href="https://linkedin.com" target="_blank" class="bg-[#0077b5] hover:bg-[#006294] transition text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center space-x-2 shadow-lg">
+                <a href="https://linkedin.com" target="_blank" class="bg-[#0077b5] hover:bg-[#005885] transition-colors text-white px-6 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2 shadow-md hover:shadow-lg">
                     <i class="fa-brands fa-linkedin text-lg"></i>
-                    <span>Suivre l'actualité sur LinkedIn</span>
+                    <span>Suivre sur LinkedIn</span>
                 </a>
             </div>
         </header>
 
         <main class="my-auto py-12 max-w-7xl mx-auto w-full">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-                    Maîtrisez les Méthodologies <span class="text-cyan-400">Clés</span>
+            <div class="text-center mb-14">
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 drop-shadow-sm">
+                    Maîtrisez les Méthodologies <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Clés</span>
                 </h2>
-                <p class="text-slate-400 max-w-2xl mx-auto text-lg">
-                    Sélectionnez un pilier industriel pour explorer les fiches de révision et téléchargez-les instantanément au format infographie.
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
+                    Sélectionnez un pilier industriel pour explorer les fiches de révision et téléchargez-les instantanément au format infographie HD.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 backdrop-blur-md hover:border-orange-500/50 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 group">
-                    <div class="text-orange-500 text-3xl mb-4 group-hover:scale-110 transition-transform"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">LEAN MANAGEMENT</h3>
-                    <p class="text-sm text-slate-400 mb-4">Chasse aux gaspillages, optimisation des flux et création de valeur.</p>
-                    <span class="text-xs font-semibold px-2.5 py-1 bg-orange-500/10 text-orange-400 rounded-full">7 Méthodes</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.15)] hover:-translate-y-1 hover:border-orange-200 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-500"></div>
+                    <div class="text-orange-500 text-3xl mb-5 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">LEAN MANAGEMENT</h3>
+                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">Chasse aux gaspillages, optimisation des flux et création de valeur.</p>
+                    <span class="text-xs font-bold px-3 py-1.5 bg-orange-100 text-orange-600 rounded-lg">7 Méthodes</span>
                 </div>
 
-                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 backdrop-blur-md hover:border-emerald-500/50 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 group">
-                    <div class="text-emerald-500 text-3xl mb-4 group-hover:scale-110 transition-transform"><i class="fa-solid fa-gears"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">PERF. INDUSTRIELLE</h3>
-                    <p class="text-sm text-slate-400 mb-4">Suivi du TRS, fiabilisation des équipements et outils qualité.</p>
-                    <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded-full">5 Méthodes</span>
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] hover:-translate-y-1 hover:border-emerald-200 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-500"></div>
+                    <div class="text-emerald-500 text-3xl mb-5 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-gears"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">PERF. INDUSTRIELLE</h3>
+                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">Suivi du TRS, fiabilisation des équipements et outils qualité.</p>
+                    <span class="text-xs font-bold px-3 py-1.5 bg-emerald-100 text-emerald-600 rounded-lg">5 Méthodes</span>
                 </div>
 
-                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 backdrop-blur-md hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group">
-                    <div class="text-blue-500 text-3xl mb-4 group-hover:scale-110 transition-transform"><i class="fa-solid fa-database"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">DATA & ANALYTICS</h3>
-                    <p class="text-sm text-slate-400 mb-4">Exploitation de la donnée technique : SQL, Power BI et outils décisionnels.</p>
-                    <span class="text-xs font-semibold px-2.5 py-1 bg-blue-500/10 text-blue-400 rounded-full">4 Méthodes</span>
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:-translate-y-1 hover:border-blue-200 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-500"></div>
+                    <div class="text-blue-500 text-3xl mb-5 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">DATA & ANALYTICS</h3>
+                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">Exploitation de la donnée technique : SQL, Power BI et Décisionnel.</p>
+                    <span class="text-xs font-bold px-3 py-1.5 bg-blue-100 text-blue-600 rounded-lg">4 Méthodes</span>
                 </div>
 
-                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 backdrop-blur-md hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group">
-                    <div class="text-purple-500 text-3xl mb-4 group-hover:scale-110 transition-transform"><i class="fa-solid fa-network-wired"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">SYSTEMS & ERP</h3>
-                    <p class="text-sm text-slate-400 mb-4">Maîtrise de l'écosystème SAP et gestion intégrée de la Supply Chain.</p>
-                    <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 rounded-full">4 Méthodes</span>
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(168,85,247,0.15)] hover:-translate-y-1 hover:border-purple-200 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-500"></div>
+                    <div class="text-purple-500 text-3xl mb-5 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">SYSTEMS & ERP</h3>
+                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">Maîtrise de l'écosystème SAP et gestion de la Supply Chain.</p>
+                    <span class="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-600 rounded-lg">4 Méthodes</span>
                 </div>
             </div>
 
-            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-md">
-                <h3 class="text-lg font-mono font-bold uppercase tracking-wider text-slate-400 mb-6 flex items-center">
-                    <span class="w-2 h-2 rounded-full bg-cyan-400 mr-3 animate-pulse"></span> Index exhaustif des modules
+            <div class="bg-white/80 border border-slate-200 rounded-3xl p-8 shadow-sm backdrop-blur-xl">
+                <h3 class="text-lg font-mono font-bold uppercase tracking-wider text-slate-700 mb-8 flex items-center">
+                    <span class="flex h-3 w-3 relative mr-4">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                    </span>
+                    Index exhaustif des modules
                 </h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-semibold">
-                    <a href="lean/gemba.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>1. GEMBA</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/5s.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>2. 5S</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/kaizen.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>3. KAIZEN</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/poka-yoke.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>4. POKA-YOKE</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/jidoka.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>5. JIDOKA</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/kanban.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>6. KANBAN</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/vsm.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>7. VSM</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="lean/smed.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-orange-500/10 hover:border-orange-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>8. SMED</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-bold">
+                    <a href="lean/gemba.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>1. GEMBA</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/5s.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>2. 5S</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/kaizen.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>3. KAIZEN</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/poka-yoke.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>4. POKA-YOKE</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/jidoka.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>5. JIDOKA</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/kanban.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>6. KANBAN</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/vsm.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>7. VSM</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="lean/smed.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-orange-50 hover:border-orange-200 hover:text-orange-600 text-slate-600 transition-all flex items-center justify-between group"><span>8. SMED</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
                     
-                    <a href="perf/trs.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>9. TRS (OEE)</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="perf/tpm.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>10. TPM</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="perf/six-sigma.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>11. SIX SIGMA</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="perf/amdec.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>12. AMDEC</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="perf/hoshin.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>13. HOSHIN KANRI</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+                    <a href="perf/trs.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-emerald-50 hover:border-emerald-200 hover:text-emerald-600 text-slate-600 transition-all flex items-center justify-between group"><span>9. TRS (OEE)</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="perf/tpm.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-emerald-50 hover:border-emerald-200 hover:text-emerald-600 text-slate-600 transition-all flex items-center justify-between group"><span>10. TPM</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="perf/six-sigma.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-emerald-50 hover:border-emerald-200 hover:text-emerald-600 text-slate-600 transition-all flex items-center justify-between group"><span>11. SIX SIGMA</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="perf/amdec.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-emerald-50 hover:border-emerald-200 hover:text-emerald-600 text-slate-600 transition-all flex items-center justify-between group"><span>12. AMDEC</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="perf/hoshin.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-emerald-50 hover:border-emerald-200 hover:text-emerald-600 text-slate-600 transition-all flex items-center justify-between group"><span>13. HOSHIN KANRI</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
                     
-                    <a href="data/sql.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-blue-500/10 hover:border-blue-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>14. SQL FOR ENG</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="data/powerbi.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-blue-500/10 hover:border-blue-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>15. POWER BI</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="data/excel.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-blue-500/10 hover:border-blue-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>16. EXCEL ADVANCED</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="data/python.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-blue-500/10 hover:border-blue-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>17. PYTHON INDUS</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+                    <a href="data/sql.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 text-slate-600 transition-all flex items-center justify-between group"><span>14. SQL FOR ENG</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="data/powerbi.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 text-slate-600 transition-all flex items-center justify-between group"><span>15. POWER BI</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="data/excel.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 text-slate-600 transition-all flex items-center justify-between group"><span>16. EXCEL ADV.</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="data/python.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 text-slate-600 transition-all flex items-center justify-between group"><span>17. PYTHON INDUS</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
                     
-                    <a href="systems/sap.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-purple-500/10 hover:border-purple-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>18. SAP MM/PP</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="systems/supply.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-purple-500/10 hover:border-purple-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>19. SUPPLY CHAIN</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
-                    <a href="systems/agile.html" class="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30 hover:bg-purple-500/10 hover:border-purple-500/40 text-slate-300 hover:text-white transition flex items-center justify-between"><span>20. AGILE INDUS</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+                    <a href="systems/sap.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-purple-50 hover:border-purple-200 hover:text-purple-600 text-slate-600 transition-all flex items-center justify-between group"><span>18. SAP MM/PP</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="systems/supply.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-purple-50 hover:border-purple-200 hover:text-purple-600 text-slate-600 transition-all flex items-center justify-between group"><span>19. SUPPLY CHAIN</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
+                    <a href="systems/agile.html" class="px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:bg-purple-50 hover:border-purple-200 hover:text-purple-600 text-slate-600 transition-all flex items-center justify-between group"><span>20. AGILE INDUS</span> <i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></a>
                 </div>
             </div>
         </main>
 
-        <section class="max-w-4xl mx-auto w-full bg-slate-900 border border-slate-700 rounded-2xl p-6 shadow-xl mb-12">
-            <h4 class="text-xl font-bold text-white mb-4"><i class="fa-solid fa-wand-magic-sparkles text-cyan-400 mr-2"></i> Zone de Test de l'Export Image</h4>
-            <p class="text-sm text-slate-400 mb-6">Voici comment se présentera chaque fiche méthodologique. Clique sur le bouton ci-dessous pour tester l'export en direct.</p>
+        <section class="max-w-4xl mx-auto w-full bg-white border border-slate-200 rounded-3xl p-8 shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] mb-12 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
             
-            <div id="capture-card" class="bg-white text-slate-900 p-8 rounded-xl shadow-lg border-2 border-orange-500 max-w-md mx-auto">
-                <div class="flex justify-between items-center border-b-2 border-slate-200 pb-3 mb-4">
-                    <span class="text-xs font-mono tracking-widest text-orange-600 font-bold uppercase">Outil Lean N°3</span>
-                    <i class="fa-solid fa-shield-halved text-orange-500 text-xl"></i>
+            <h4 class="text-xl font-black text-slate-800 mb-2 flex items-center">
+                <i class="fa-solid fa-wand-magic-sparkles text-cyan-500 mr-3"></i> Zone d'Export Dynamique
+            </h4>
+            <p class="text-sm text-slate-500 mb-8 font-medium">Testez le rendu final. Cliquez sur le bouton pour générer l'image prête à être postée sur vos réseaux.</p>
+            
+            <div id="capture-card" class="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 max-w-md mx-auto relative">
+                <div class="absolute top-0 right-8 w-12 h-1.5 bg-orange-500 rounded-b-md"></div>
+                
+                <div class="flex justify-between items-end border-b border-slate-100 pb-4 mb-5 mt-2">
+                    <div>
+                        <span class="text-[10px] font-mono tracking-widest text-orange-500 font-bold uppercase bg-orange-50 px-2 py-1 rounded">Outil Lean #04</span>
+                        <h3 class="text-3xl font-black text-slate-900 tracking-tight mt-2">POKA-YOKE</h3>
+                    </div>
+                    <div class="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md shadow-orange-500/30">
+                        <i class="fa-solid fa-shield-halved text-lg"></i>
+                    </div>
                 </div>
-                <h3 class="text-2xl font-black text-slate-900 tracking-tight">POKA-YOKE</h3>
-                <p class="text-xs text-slate-500 italic mb-4">Mécanisme Anti-Erreur</p>
-                <ul class="space-y-2 text-sm text-slate-700">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Empêche les erreurs humaines en amont.</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Élimine les rebuts de fabrication.</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Exemple : Détrompeur sur prise électrique.</li>
+                
+                <p class="text-sm text-slate-500 italic mb-6 font-medium">« Le mécanisme anti-erreur parfait »</p>
+                
+                <ul class="space-y-4 text-sm text-slate-700 font-medium">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 mr-3 text-lg"></i> 
+                        <span>Rend l'erreur humaine impossible par la conception même du produit ou du poste.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 mr-3 text-lg"></i> 
+                        <span>Éradique les contrôles qualité coûteux en fin de ligne (zéro défaut).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 mr-3 text-lg"></i> 
+                        <span>Exemple : Un connecteur asymétrique (USB, prise de terre) qui ne s'insère que dans un sens.</span>
+                    </li>
                 </ul>
-                <div class="mt-6 pt-4 border-t border-slate-100 text-center">
-                    <span class="text-[10px] text-slate-400 font-mono tracking-wide">Infographie par Ingénieur MasterHub</span>
+                
+                <div class="mt-8 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-6 h-6 rounded bg-blue-600 flex items-center justify-center text-white text-[10px]"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Ingénieur MasterHub</span>
+                    </div>
+                    <span class="text-[10px] text-slate-400 font-mono">LinkedIn.com</span>
                 </div>
             </div>
 
-            <div class="text-center mt-6">
-                <button onclick="downloadCardPNG()" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg inline-flex items-center space-x-3 cursor-pointer">
-                    <i class="fa-solid fa-file-image text-lg"></i>
-                    <span>Télécharger la Fiche Poka-Yoke (.PNG)</span>
+            <div class="text-center mt-10">
+                <button onclick="downloadCardPNG()" class="bg-slate-900 hover:bg-blue-600 text-white font-bold px-8 py-3.5 rounded-full transition-all duration-300 shadow-xl shadow-slate-900/20 hover:shadow-blue-600/30 inline-flex items-center space-x-3 cursor-pointer group">
+                    <i class="fa-solid fa-cloud-arrow-down text-lg group-hover:-translate-y-1 transition-transform"></i>
+                    <span>Télécharger l'Infographie Poka-Yoke</span>
                 </button>
             </div>
         </section>
 
-        <footer class="text-center text-xs text-slate-500 font-mono border-t border-slate-800/80 pt-6">
-            <p>&copy; 2026 Engineer MasterHub. Déployé fièrement sur GitHub Pages.</p>
+        <footer class="text-center text-sm text-slate-400 font-medium pt-8 pb-4">
+            <p>&copy; 2026 Engineer MasterHub. Propulsé avec excellence technique.</p>
         </footer>
     </div>
 
     <script>
         function downloadCardPNG() {
             const card = document.getElementById('capture-card');
+            const originalBoxShadow = card.style.boxShadow;
             
-            // Configuration pour une qualité d'image maximale (Retina/HD ready)
+            // Pour éviter les bugs d'ombre sous html2canvas, on la retire juste le temps de la capture
+            card.style.boxShadow = 'none';
+
             const options = {
-                scale: 3, // Augmente la résolution pour LinkedIn
+                scale: 3, // Haute résolution 
                 useCORS: true,
-                backgroundColor: null // Fond transparent ou respecte le CSS
+                backgroundColor: '#ffffff' // Fond blanc garanti pour l'export
             };
 
             html2canvas(card, options).then(canvas => {
-                // Conversion en URL de données PNG
-                const image = canvas.toDataURL("image/png");
+                // On remet l'ombre dans le DOM
+                card.style.boxShadow = originalBoxShadow;
                 
-                // Création d'un lien invisible pour forcer le téléchargement
+                const image = canvas.toDataURL("image/png");
                 const link = document.createElement('a');
-                link.download = 'Fiche_Lean_Poka_Yoke.png';
+                link.download = 'Fiche_Pro_Poka_Yoke.png';
                 link.href = image;
                 link.click();
             });
         }
     </script>
 </body>
-</html
+</html>
