@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIDOKA - Engineer Toolkit</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .card-texture {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col selection:bg-orange-200 selection:text-orange-900">
+
+    <nav class="p-6 max-w-5xl mx-auto w-full flex justify-between items-center">
+        <a href="../index.html" class="flex items-center space-x-2 text-slate-500 hover:text-orange-600 font-semibold transition-colors bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-sm hover:shadow-md">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Retour au Hub</span>
+        </a>
+        <div class="flex items-center space-x-2 text-orange-500 font-bold bg-orange-50 px-4 py-2 rounded-xl border border-orange-100">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Module Lean Management</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-6 w-full max-w-5xl mx-auto">
+        
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">LE JIDOKA</h1>
+            <p class="text-lg text-slate-500 max-w-xl mx-auto font-medium">L'autonomation, ou donner de l'intelligence à la machine pour protéger la qualité.</p>
+        </div>
+
+        <div id="capture-card" class="bg-white card-texture p-10 rounded-3xl shadow-[0_20px_50px_rgba(249,_115,_22,_0.1)] border border-slate-100 max-w-lg mx-auto relative overflow-hidden">
+            
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-400 via-orange-500 to-amber-500"></div>
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-orange-50 rounded-full blur-3xl -z-10"></div>
+            
+            <div class="flex justify-between items-start pb-6 mb-6 border-b border-slate-200">
+                <div>
+                    <span class="inline-block text-[10px] font-mono tracking-widest text-orange-600 font-bold uppercase bg-orange-100 px-2.5 py-1 rounded-md mb-3">Outil Lean #05</span>
+                    <h3 class="text-4xl font-black text-slate-900 tracking-tighter leading-none">CONCEPT</h3>
+                    <h4 class="text-3xl font-black text-orange-500 tracking-tighter mt-1">JIDOKA</h4>
+                </div>
+                <div class="bg-gradient-to-br from-orange-400 to-orange-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/40 transform rotate-3">
+                    <i class="fa-solid fa-robot text-2xl -rotate-6"></i>
+                </div>
+            </div>
+            
+            <p class="text-base text-slate-600 font-semibold italic mb-8 border-l-4 border-orange-400 pl-4">
+                "L'automatisation à visage humain." Un principe fondamental du TPS (Toyota Production System) qui permet à un équipement de s'arrêter seul dès qu'une anomalie est détectée.
+            </p>
+            
+            <div class="space-y-5 mb-8">
+                <div class="flex items-start">
+                    <div class="mt-1 bg-orange-50 border border-orange-200 text-orange-600 p-2 rounded-lg text-xs"><i class="fa-solid fa-hand-paper"></i></div>
+                    <div class="ml-4">
+                        <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wide mb-0.5">Arrêt au premier défaut</h5>
+                        <p class="text-xs text-slate-500 leading-relaxed">Dès la détection d'une dérive, la production s'arrête (via la machine ou l'opérateur avec le cordon Andon). On ne transmet jamais un défaut à l'étape suivante.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="mt-1 bg-orange-50 border border-orange-200 text-orange-600 p-2 rounded-lg text-xs"><i class="fa-solid fa-people-arrows"></i></div>
+                    <div class="ml-4">
+                        <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wide mb-0.5">Séparation Homme-Machine</h5>
+                        <p class="text-xs text-slate-500 leading-relaxed">La machine travaille de manière autonome. L'opérateur est libéré de la simple surveillance et n'intervient que pour apporter de la valeur ajoutée ou résoudre une alerte.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="mt-1 bg-orange-50 border border-orange-200 text-orange-600 p-2 rounded-lg text-xs"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <div class="ml-4">
+                        <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wide mb-0.5">Résolution à la source</h5>
+                        <p class="text-xs text-slate-500 leading-relaxed">On fixe le problème immédiat, puis on cherche la cause racine (ex: méthode des 5 Pourquoi) pour intégrer une contre-mesure définitive.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-5 border-t border-slate-200 flex justify-between items-center bg-white">
+                <div class="flex items-center space-x-2">
+                    <div class="w-7 h-7 rounded-lg bg-slate-900 flex items-center justify-center text-white text-xs"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <span class="text-[11px] text-slate-800 font-bold uppercase tracking-widest">Ingénieur MasterHub</span>
+                </div>
+                <div class="flex items-center space-x-1 text-[10px] text-slate-400 font-mono font-bold">
+                    <i class="fa-brands fa-linkedin text-blue-600 text-sm"></i>
+                    <span>@TonNom</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 mb-8">
+            <button onclick="downloadCardPNG()" class="bg-slate-900 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl shadow-slate-900/20 hover:shadow-orange-600/30 inline-flex items-center space-x-4 cursor-pointer group text-lg">
+                <i class="fa-solid fa-download text-xl group-hover:-translate-y-1 transition-transform"></i>
+                <span>Télécharger la Fiche JIDOKA (HD)</span>
+            </button>
+            <p class="text-xs text-slate-400 mt-4 font-mono">Générez l'image et partagez votre expertise</p>
+        </div>
+
+    </main>
+
+    <script>
+        function downloadCardPNG() {
+            const card = document.getElementById('capture-card');
+            const originalBoxShadow = card.style.boxShadow;
+            card.style.boxShadow = 'none';
+
+            const options = {
+                scale: 4, 
+                useCORS: true,
+                backgroundColor: '#ffffff',
+                logging: false
+            };
+
+            html2canvas(card, options).then(canvas => {
+                card.style.boxShadow = originalBoxShadow;
+                const image = canvas.toDataURL("image/png");
+                const link = document.createElement('a');
+                link.download = 'Ingenieur_MasterHub_JIDOKA.png';
+                link.href = image;
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>
